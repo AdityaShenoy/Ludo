@@ -23,15 +23,17 @@ public class RoundButton extends JButton {
 
 	// Paint the round background and label.
 	  protected void paintComponent(Graphics g) {
+		  g.setColor(Color.WHITE);
+		 g.fillOval(0, 0, getSize().width, getSize().height);
 	    if (getModel().isArmed()) {
 	// You might want to make the highlight color 
 	   // a property of the RoundButton class.
-	      g.setColor(Color.lightGray);
+	      g.setColor(Color.WHITE);
 	    } else {
 	      g.setColor(getBackground());
 	    }
-	    g.fillOval(0, 0, getSize().width-1, 
-	      getSize().height-1);
+	    g.fillOval(5, 5, getSize().width-10, 
+	      getSize().height-10);
 
 	// This call will paint the label and the 
 	   // focus rectangle.
