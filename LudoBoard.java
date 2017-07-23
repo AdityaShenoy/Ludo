@@ -2119,7 +2119,7 @@ public class LudoBoard{
 		//This code is for testing purpose
 		//The dice will be clicked until there is at least 2 choices
 		//for the user to click.
-		dice.doClick();
+		//dice.doClick();
 	}
 		
 	public void allotRank(int r, Color c){
